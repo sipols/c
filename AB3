@@ -1,0 +1,31 @@
+1 Binäre Suche
+1.1 Problemstellung
+Gegeben sei ein sortiertes Array von Strukturen mit Identifikationsnummern und Namen, wie zum Beispiel:
+struct Person {int id; char Vorname[20]; char Nachname[20];};
+struct Person Leute[23]=
+{{12,"Brad","Pitt"},
+ {13,"Bill","Gates"},
+ {17,"Donald","Duck"}
+ {24,"David","Jarolim"},
+ {25,"Angela","Merkel"},
+ {26,"Heidi","Klum"},
+ {30,"Fernando","Alonso"},
+ {32,"Jimi","Hendrix"},
+ {34,"Jeanne","d’Arc"},
+ {36,"Reinhard","Baran"},
+ {38,"Angela","Joli"}
+ {40,"Osama","Bin Laden"},
+ {41,"Didier","Drogba"},
+ {42,"Helmut","Schmidt"},
+ {43,"Volker","Reinecke"},
+ {44,"Jogi","Loew"},
+ {45,"Albert","Einstein"},
+ {46,"Hillary","Clinton"},
+ {50,"Emine","Erdogan"},
+ {1000,"Geraldine","Chaplin"},
+ {1001,"Erich","Honecker"},
+ {1009,"Donald","Trump"}
+ {9999,"Karl","Marx"}
+};
+1.2 Aufgabe 3
+Bitte schreiben Sie ein Programm, das diese Liste mit der C Library Funktion qsort jeweils nach Identifikationsnummer, Vornamen und Nachnamen jeweils aufsteigend und absteigend sortiert. Sollte es identische Vor- oder Nachnamen geben, soll die id zuhilfe genommen werden. Suchen Sie danach mit Hilfe der C Library Funktion bsearch nach einer Person mit einem bestimmten Namen, einer bestimmten Identifikationsnummer und einem bestimmten Vornamen sucht. Bitte protokollieren Sie die Startadresse des Arrays und die Länge eines Elements und an welcher Adresse die jeweils gefundenen Elemente stehen. Machen Sie auch Screenshots von den sortierten Listen.
